@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Rubik-Light
+font link: https://fonts.google.com/specimen/Rubik
+font author: Hubert and Fischer
+font author site: http://hubertfischer.com/
+
+
+icon designer: Alfredo @ IconsAlfredo.com
+icon designer link: /AlfredoCreates
+        
+{"bg":"#B0BDA2","icon":"#29474A","font":"#FFFFFF","slogan":"#ffffff"}
+      
