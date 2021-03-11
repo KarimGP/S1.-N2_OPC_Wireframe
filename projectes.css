@@ -107,10 +107,10 @@ header {
 #element3 {
     display: grid;
     grid-column-gap: 7px;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(1, 1fr); 
     width: auto;
     margin: 0px;
-    height: 200px;
+    height: auto;
 }
 
 #element3 > div {
@@ -120,6 +120,8 @@ header {
     margin-bottom: 10px;
     display: grid;
     align-items: center;
+    height: auto;
+    min-height: 400px;
 }
 
 #element3 > .p1 {
@@ -162,52 +164,12 @@ header {
     text-align: center;
     margin-left: 50%;
     transform: translateX(-50%);
+    max-width: 200px;
 }
 
 .b1:hover {
     background-color: rgb(174, 185, 180) ;
     color: rgb(13, 58, 40);
-}
-
-
-#element4 {
-    display: grid;
-    grid-template-columns: 25% 50% 25%; 
-    width: auto;
-    margin: 0px;
-    height: auto;
-    
-}
-
-#element4 > div {
-    font-size: 20px;
-    text-align: justify;
-    display: grid;
-    align-items: center;
-    padding: 30px;
-    font-family: Arial, 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
-}
-
-#colini {
-    background: url("img/15.jpg");
-    background-size: cover;
-}
-
-#colmed {
-    background-color: rgb(174, 185, 180);
-    text-align: justify;
-    line-height: auto;
-}
-
-#colmed > div {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
 }
 
 h1 {
@@ -220,11 +182,6 @@ h2 {
     font-size: 14px;
     font-family: 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
 
-}
-
-#colfin {
-    background: url("img/17.jpg");
-    background-size: cover;
 }
 
 footer {
