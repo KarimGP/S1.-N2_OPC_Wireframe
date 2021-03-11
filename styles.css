@@ -2,6 +2,7 @@ body {
     margin: 10px;
     padding: 0px;
     background-color: rgb(230, 230, 230);
+    justify-content:center;
 }
 
 .container {
@@ -20,6 +21,7 @@ header {
     margin: 10px;
     margin-bottom: 20px;
     align-items: center;
+    min-width: 360px;
 }
 
 #element1 {
@@ -36,7 +38,7 @@ header {
 #element2 {
     text-align: center;
     margin-right: 20px;
-    margin-left: 330px;
+    margin-left: auto;
     height: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -71,6 +73,7 @@ header {
     width: auto;
     margin: 10px;
     margin-bottom: 20px;
+    min-width: 360px;
 }
 
 #gridNav > a {
@@ -94,7 +97,7 @@ header {
 .gridArticle {
     display: grid;
     grid-row-gap: 10px;
-    grid-template-rows: 200px 665px; 
+    grid-template-rows: auto auto; 
     width: auto;
     margin: 10px;
     margin-bottom: 20px;
@@ -117,8 +120,6 @@ header {
     margin-bottom: 10px;
     display: grid;
     align-items: center;
-    
-
 }
 
 #element3 > .p1 {
@@ -147,17 +148,20 @@ header {
     color: rgb(13, 58, 40);
     font-size: 30px;
     font-weight: bold;
+
 }
 
 .b1 {
     background-color: rgb(13, 58, 40);
     color: white;
-    width: 100px;
+    width: auto;
     font-family: Arial, 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
     border-radius: 5px;
     height: 30px;
-    margin-left: 110px;
     -webkit-text-stroke: 0px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .b1:hover {
@@ -171,17 +175,16 @@ header {
     grid-template-columns: 25% 50% 25%; 
     width: auto;
     margin: 0px;
-    height: 400px;
+    height: auto;
     
 }
 
 #element4 > div {
-    padding: 0px;
     font-size: 20px;
     text-align: justify;
     display: grid;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
     font-family: Arial, 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
 }
 
@@ -192,14 +195,23 @@ header {
 
 #colmed {
     background-color: rgb(174, 185, 180);
-    display: grid;
-    grid-template-rows: 50% 50%;
     text-align: justify;
-    padding-top: 20px;
+    line-height: auto;
+}
+
+#colmed > div {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 h1 {
-    font-size: 16px;
+    font-size: 18px;
     font-family: Arial, 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
 
 }
@@ -226,4 +238,27 @@ footer {
     color: white;
     font-family: Arial, 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
     font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    
+    #gridNav {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
+
+    #gridNav > a {
+        margin: 3px;
+    }
+    
+    #element3 {
+        display: grid;
+        grid-column-gap: 7px;
+        grid-template-columns: repeat(1, 1fr); 
+        width: auto;
+        margin: 0px;
+        height: auto;
+    }
 }
