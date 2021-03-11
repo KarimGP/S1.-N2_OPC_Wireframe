@@ -162,6 +162,7 @@ header {
     text-align: center;
     margin-left: 50%;
     transform: translateX(-50%);
+    max-width: 100px;
 }
 
 .b1:hover {
